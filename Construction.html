@@ -35,6 +35,10 @@
             color: #0a1e2f;
             line-height: 1.5;
             scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;  /* 最小高度为视口高度 */
+            margin: 0;
         }
 
         /* 主色调：科技蓝 */
@@ -58,6 +62,9 @@
             max-width: var(--max-width);
             margin: 0 auto;
             padding: 0 24px;
+        }
+        main {
+            flex: 1;  /* 自动占据剩余空间，把 footer 推到底部 */
         }
 
          /* 白色网格层 - 使用 repeating-linear-gradient 绘制网格线，降低透明度 */
