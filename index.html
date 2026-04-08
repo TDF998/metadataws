@@ -120,12 +120,27 @@
                 height: 64px;
             }
         }
+        
         /* Logo 区域 */
+        .logo-area {
+        display: flex;
+        flex-direction: row; 
+        }
+        .logo-area > :not(:last-child) {
+        margin-left: 10px;
+        }
+        /* 如果浏览器支持 gap，则覆盖掉 margin 方案 */
+        @supports (gap: 10px) {
         .logo-area {
             display: flex;
             align-items: center;
             gap: 10px;
             cursor: pointer;
+            }
+        
+        .logo-area > :not(:last-child) {
+            margin-left: 0;
+            }
         }
         .logo-icon {
             width: 36px;
