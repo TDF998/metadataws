@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>元镜智联 | 一站式企业级元数据服务云平台</title>
+    <title>Metadata WS | 元数据管理与Web服务元数据平台</title>
     <!-- 引入 Google Fonts 提升字体质感 -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <!-- 使用 Font Awesome 6 (免费图标库) -->
@@ -124,7 +124,7 @@
         .logo-area {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 6px;
             cursor: pointer;
         }
         .logo-icon {
@@ -151,6 +151,13 @@
         @media (max-width: 640px) {
             .logo-text {
                 font-size: 15px;
+            }
+            .logo-area .pl {
+                padding-left: 10px;
+                display: flex;
+                align-items: center;
+                gap:0;
+                cursor: pointer;
             }
         }
         /* 桌面导航菜单 */
@@ -622,7 +629,7 @@
     <div class="nav-container">
         <div class="logo-area">
             <div class="logo-icon"><i><img src="./icon/logo.png" width="28px"; style="margin-top: 8px;"></i></div>
-            <span class="logo-text"></span><img src="./icon/Metadata ms.png" height="18px">
+            <span class="logo-text"></span><img class="pl" src="./icon/Metadata ms.png" height="18px">
         </div>
         <button class="menu-toggle" id="menuToggle" aria-label="菜单"><i class="fas fa-bars"></i></button>
         <div class="nav-menu" id="navMenu">
